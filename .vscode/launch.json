@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "firefox",
+        "request": "launch",
+        "name": "Debug Firefox",
+        "reAttach": true,
+        "url": "http://localhost:5500", // Replace with your application URL
+        "webRoot": "${workspaceFolder}"
+      }
+    ]
+  }
+  
