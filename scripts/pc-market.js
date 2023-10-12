@@ -20,6 +20,34 @@ categoryContainers.forEach((categoryContainer) => {
   }
 });
 
+/* JSON DATA FOR CARDS */
+function updateCard(cardId, data) {
+  const card = document.getElementById(cardId);
+
+  card.querySelector("#price").textContent = data.price;
+  card.querySelector("#fullName").textContent = data.fullName;
+}
+
+/* JSON DATA FOR MODAL */
+function updateModal(cardId, data) {
+  const card = document.getElementById(cardId);
+
+  card.querySelector("#price").textContent = data.price;
+  card.querySelector("#fullName").textContent = data.fullName;
+}
+
+fetch('../data/pcs.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(product => {
+      const cardId = product.id;
+      updateCard(cardId, product);
+    })
+  })
+  .catch(error => {
+    console.error('Error fetching JSON data: ', error);
+  });
+
 /* MODAL LOADING */
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
