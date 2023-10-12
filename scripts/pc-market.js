@@ -1,3 +1,4 @@
+/* CATEGORY */
 const categoryContainers = document.querySelectorAll('.category-container');
 let currentCategoryName = "";
 
@@ -5,7 +6,7 @@ categoryContainers.forEach((categoryContainer) => {
   const categoryNameElement = categoryContainer.querySelector('.category-name');
 
   if (categoryNameElement) {
-    const categoryNameText = categoryNameElement.textContent.trim();
+    const categoryNameText = categoryNameElement.innerText.trim();
 
     if (currentCategoryName !== categoryNameText) {
       currentCategoryName = categoryNameText;
@@ -19,6 +20,7 @@ categoryContainers.forEach((categoryContainer) => {
   }
 });
 
+/* MODAL LOADING */
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const modalOpenButtons = document.querySelectorAll(".open-modal-button");
@@ -50,3 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+/* JSON DATA */
+  fetch("../data/pcs.json")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => console.error("Error loading JSON data: " + error));
+
