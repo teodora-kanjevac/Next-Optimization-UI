@@ -20,12 +20,33 @@ categoryContainers.forEach((categoryContainer) => {
   }
 });
 
-/* JSON DATA FOR CARDS */
+/* JSON FETCHING */
+let data;
+function fetchData() {
+  fetch('../data/pcs.json')
+    .then(response => response.json())
+    .then(jsonData => {
+      data = jsonData;
+    })
+    .catch(error => {
+      console.error('Error fetching JSON data: ', error);
+    });
+}
+
+/* POPULATING CARDS */
 function updateCard(cardId, data) {
   const card = document.getElementById(cardId);
 
   card.querySelector("#price").textContent = data.price;
   card.querySelector("#fullName").textContent = data.fullName;
+}
+
+fetchData();
+if (data) {
+  data.forEach(product => {
+    const cardId = product.id;
+    updateCard(cardId, product);
+  })
 }
 
 /* JSON DATA FOR MODAL */
@@ -35,18 +56,6 @@ function updateModal(cardId, data) {
   card.querySelector("#price").textContent = data.price;
   card.querySelector("#fullName").textContent = data.fullName;
 }
-
-fetch('../data/pcs.json')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach(product => {
-      const cardId = product.id;
-      updateCard(cardId, product);
-    })
-  })
-  .catch(error => {
-    console.error('Error fetching JSON data: ', error);
-  });
 
 /* MODAL LOADING */
 document.addEventListener("DOMContentLoaded", function () {
@@ -80,12 +89,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-/* JSON DATA */
-  fetch("../data/pcs.json")
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-      })
-      .catch(error => console.error("Error loading JSON data: " + error));
-
