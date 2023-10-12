@@ -127,22 +127,23 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding: 10px 0;
     z-index: 1;
 }
 
 .card .contentBox {
     position: relative;
-    padding: 10px 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     z-index: 2;
 }
 
 .card .contentBox h3 {
-    font-size: 18px;
+    font-size: 1.1em;
     color: white;
     font-weight: 500;
     text-transform: uppercase;
@@ -151,7 +152,8 @@ section {
 
 .card .contentBox .price {
     font-size: 24px;
-    color: white;
+    margin-top: 10px;
+    color: rgb(216, 144, 178);
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -160,8 +162,10 @@ section {
     position: relative;
     top: 100px;
     opacity: 0;
-    padding: 10px 30px;
-    margin-top: 15px;
+    padding: 8px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 7px;
     color: #eee;
     text-decoration: none;
     background: #8E6582;
