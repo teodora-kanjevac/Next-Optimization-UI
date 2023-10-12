@@ -20,42 +20,55 @@ categoryContainers.forEach((categoryContainer) => {
   }
 });
 
-/* JSON FETCHING */
-let data;
-function fetchData() {
+/* JSON CARD DATA FETCHING */
+function fetchDataCards() {
   fetch('../data/pcs.json')
     .then(response => response.json())
-    .then(jsonData => {
-      data = jsonData;
+    .then(data => {
+      data.forEach(product => {
+        const cardId = product.id;
+        updateCard(cardId, product);
+      })
     })
     .catch(error => {
       console.error('Error fetching JSON data: ', error);
     });
 }
 
-/* POPULATING CARDS */
 function updateCard(cardId, data) {
   const card = document.getElementById(cardId);
-
   card.querySelector("#price").textContent = data.price;
   card.querySelector("#fullName").textContent = data.fullName;
 }
 
-fetchData();
-if (data) {
-  data.forEach(product => {
-    const cardId = product.id;
-    updateCard(cardId, product);
-  })
+/* JSON MODAL DATA FETCHING */
+function fetchDataModal(productId) {
+  fetch('../data/pcs.json')
+    .then(response => response.json())
+    .then(data => {
+      const productData = data.find(product => product.id === productId);
+      updateModal(productData);
+    })
+    .catch(error => {
+      console.error('Error fetching JSON data: ', error);
+    });
 }
 
-/* JSON DATA FOR MODAL */
-function updateModal(cardId, data) {
-  const card = document.getElementById(cardId);
-
-  card.querySelector("#price").textContent = data.price;
-  card.querySelector("#fullName").textContent = data.fullName;
+function updateModal(productData) {
+  document.querySelector("#fullName").textContent = productData.fullName;
+  document.querySelector("#price").textContent = productData.price;
+  document.querySelector("#cpu").textContent = productData.cpu;
+  document.querySelector("#gpu").textContent = productData.gpu;
+  document.querySelector("#motherboard").textContent = productData.motherboard;
+  document.querySelector("#ram").textContent = productData.ram;
+  document.querySelector("#ssd").textContent = productData.ssd;
+  document.querySelector("#cooler").textContent = productData.cooler;
+  document.querySelector("#powerSupply").textContent = productData.powerSupply;
+  document.querySelector("#case").textContent = productData.case;
 }
+
+/* POPULATING CARDS */
+fetchDataCards();
 
 /* MODAL LOADING */
 document.addEventListener("DOMContentLoaded", function () {
@@ -78,7 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   modalOpenButtons.forEach(function (button) {
-    button.addEventListener("click", openModal);
+    button.addEventListener("click", function () {
+      const cardId = button.id;
+      fetchDataModal(cardId);
+      openModal();
+    });
   });
 
   modalCloseButton.addEventListener("click", closeModal);
