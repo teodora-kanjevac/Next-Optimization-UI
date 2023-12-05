@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comme:wght@400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/schedule-style.css">
+    <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 </head>
 
 <body>
@@ -63,7 +64,8 @@
                         <li class="pricing-table-product">RAM Overclocking</li>
                         <li class="pricing-table-product">7 Days of Support</li>
                     </ul>
-                    <a href="https://buy.stripe.com/8wM9BE2NOfXmdi0dQS" target="_blank" class="pricing-table-button">Continue</a>
+                    <a href="" class="pricing-table-button"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nextpcoptimization/overclocking'});return false;">Continue</a>
                 </li>
                 <li class="pricing-table-item pricing-table-item-popular" data-popular="Popular">
                     <img src="media/Icons/troubleshooting.png" alt="" class="pricing-table-img" />
@@ -79,7 +81,8 @@
                         <li class="pricing-table-product">Virus Removal</li>
                         <li class="pricing-table-product">30 Days of Support</li>
                     </ul>
-                    <a href="https://buy.stripe.com/aEUg026003aA6TC3cf" target="_blank" class="pricing-table-button">Continue</a>
+                    <a href="" class="pricing-table-button"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nextpcoptimization/optimization'});return false;">Continue</a>
                 </li>
                 <li class="pricing-table-item">
                     <img src="media/Icons/assemble.png" alt="" class="pricing-table-img" />
@@ -95,7 +98,8 @@
                         <li class="pricing-table-product">Input Delay & Ping Tweaking</li>
                         <li class="pricing-table-product">3 Months of Support</li>
                     </ul>
-                    <a href="https://buy.stripe.com/14kdRUbkk6mMfq8eUY" target="_blank" class="pricing-table-button">Continue</a>
+                    <a href="" class="pricing-table-button"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nextpcoptimization/fulltuning'});return false;">Continue</a>
                 </li>
             </ul>
         </div>
@@ -154,6 +158,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 
 </html>
