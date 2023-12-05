@@ -335,6 +335,16 @@ footer a:hover {
     font-size: 24px;
 }
 
+.tiktok a{
+    transition: color 0.2s ease;
+}
+
+.tiktok a:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(99deg, rgba(105,201,208,1) 20%, rgba(1,1,1,1) 32%, rgba(1,1,1,1) 59%, rgba(238,29,82,1) 71%); 
+}
+
 .youtube a {
     transition: color 0.2s ease;
 }
