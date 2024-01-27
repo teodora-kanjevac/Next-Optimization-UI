@@ -58,9 +58,13 @@ nav a {
 .question-mark {
     font-size: 3em;
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(45deg, #752e79, #ad6b9a)
+    background-image: -webkit-linear-gradient(45deg, #752e79, #ad6b9a);
+    background-image: linear-gradient(45deg, #752e79, #ad6b9a);
 }
+
+
 
 .faq-title {
     margin-top: 15px;
@@ -164,17 +168,17 @@ footer a:hover {
 .tiktok a{
     transition: color 0.2s ease;
 }
-
 .tiktok a:hover {
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(99deg, rgba(105,201,208,1) 20%, rgba(1,1,1,1) 32%, rgba(1,1,1,1) 59%, rgba(238,29,82,1) 71%); 
+    background-image: -webkit-linear-gradient(99deg, #69c9d0 20%, #010101 32%, #010101 59%, #ee1d52 71%);
+    background-image: linear-gradient(99deg, #69c9d0 20%, #010101 32%, #010101 59%, #ee1d52 71%);
 }
 
 .youtube a {
     transition: color 0.2s ease;
 }
-
 .youtube a:hover {
     color: #c4302b;
 }
@@ -182,7 +186,6 @@ footer a:hover {
 .discord a {
     transition: color 0.2s ease;
 }
-
 .discord a:hover {
     color: #7289DA;
 }
@@ -190,17 +193,17 @@ footer a:hover {
 .instagram a {
     transition: color 0.2s ease;
 }
-
 .instagram a:hover {
     color: transparent;
+    -webkit-background-clip: text;
     background-clip: text;
+    background-image: -webkit-linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
     background-image: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
 }
 
 .twitter a {
     transition: color 0.2s ease;
 }
-
 .twitter a:hover {
     color: #00acee;
 }
