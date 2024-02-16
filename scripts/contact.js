@@ -14,7 +14,7 @@ window.onload = function () {
   timezoneInput.value = "";
 }
 
-/* SENDING MAIL */
+// SENDING MAIL
 function sendEmail() {
   var isSending = false;
   var isWarningShown = false;

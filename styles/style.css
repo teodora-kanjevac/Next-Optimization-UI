@@ -143,7 +143,7 @@ section {
 
 .about-text {
     padding-bottom: 5em;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid #363636;
 }
 
 .animation-div {
@@ -187,11 +187,23 @@ section {
 }
 
 .reviews {
-    padding: 0 25vh;
+    padding: 0 15vw;
 }
 
 .review-adjust {
-    padding: 10vh;
+    padding: 7vw 5vw;
+}
+
+.text-adjust {
+    text-align: center;
+}
+
+.text-adjust img {
+    width: 100%;
+}
+
+.text-adjust p {
+    margin-top: 2em;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -221,7 +233,7 @@ section {
     transition: background-color 0.3s;
 }
 
-#scrollToTopBtn:active{
+#scrollToTopBtn:active {
     background-color: #613b55;
 }
 
@@ -238,7 +250,7 @@ section {
 footer {
     box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.5);
     background-color: #191920;
-    text-align: justify;
+    text-align: right;
     color: #eeeeee;
 }
 
@@ -256,18 +268,24 @@ footer a:hover {
     width: 100px;
 }
 
-.link-padding {
-    padding-right: 100px;
+.links {
+    padding-right: 5vw;
 }
 
-.social-media li{
+.social-media {
+    padding: 0;
+}
+
+.social-media li {
     display: inline-block;
     font-size: 24px;
+    margin-right: 0.3em;
 }
 
-.tiktok a{
+.tiktok a {
     transition: color 0.2s ease;
 }
+
 .tiktok a:hover {
     color: transparent;
     -webkit-background-clip: text;
@@ -276,23 +294,26 @@ footer a:hover {
     background-image: linear-gradient(99deg, #69c9d0 20%, #010101 32%, #010101 59%, #ee1d52 71%);
 }
 
-.youtube a{
+.youtube a {
     transition: color 0.2s ease;
 }
-.youtube a:hover{
+
+.youtube a:hover {
     color: #c4302b;
 }
 
-.discord a{
+.discord a {
     transition: color 0.2s ease;
 }
-.discord a:hover{
+
+.discord a:hover {
     color: #7289DA;
 }
 
-.instagram a{
+.instagram a {
     transition: color 0.2s ease;
 }
+
 .instagram a:hover {
     color: transparent;
     -webkit-background-clip: text;
@@ -301,10 +322,11 @@ footer a:hover {
     background-image: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
 }
 
-.twitter a{
+.twitter a {
     transition: color 0.2s ease;
 }
-.twitter a:hover{
+
+.twitter a:hover {
     color: #00acee;
 }
 
@@ -354,14 +376,6 @@ footer a:hover {
     .carousel-indicators {
         display: none;
     }
-
-    .logo {
-        display: none;
-    }
-
-    .link-padding {
-        padding-right: 50px;
-    }
 }
 
 @media (max-width: 990px) {
@@ -386,29 +400,53 @@ footer a:hover {
         max-width: 950px !important;
     }
 
-    .review-adjust {
-        display: block;
-    }
-
     .conditioner-pic {
         width: 150px !important;
         padding-bottom: 20px;
     }
 
     .text-adjust {
-        font-size: 14px;
-        text-align: justify;
-        padding: 0 25px;
-    }
-
-    .text-adjust h2 {
-        text-align: center;
+        font-size: 12px;
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 800px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .reviews {
+        padding: 0 2vw;
+    }
+
+    .hero-row h1 {
+        font-size: 9vw;
+    }
+
+    .hero-row h4 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 600px) {
     .logo {
         display: none;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+
+    .links {
+        font-size: 14px;
+    }
+
+    .links h5, .follow h5 {
+        font-size: 16px;
+    }
+
+    .social-media li {
+        font-size: 20px;
     }
 }
 
@@ -420,16 +458,5 @@ footer a:hover {
 
     .link-padding {
         display: none;
-    }
-}
-
-@media (max-width: 800px) {
-
-    .hero-row h1 {
-        font-size: 9vw;
-    }
-
-    .hero-row h4 {
-        font-size: 4vw;
     }
 }

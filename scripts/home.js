@@ -1,9 +1,9 @@
-/* RELOADING THE PAGE */
+// RELOADING THE PAGE
 window.onload = function () {
   window.scrollTo(0, 0);
 }
 
-/* ANIMATIONS */
+// ANIMATIONS
 function animateOnScroll() {
   var reveals = document.querySelectorAll(".animation-div");
 
@@ -24,7 +24,7 @@ animateOnScroll();
 
 const heroSectionHeight = document.querySelector('.hero').offsetHeight;
 
-/* STICKY NAV BAR */
+// STICKY NAV BAR
 const navbar = document.querySelector('.navbar');
 
 function toggleStickyNav() {
@@ -45,11 +45,12 @@ window.addEventListener('scroll', toggleStickyNav);
 
 toggleStickyNav();
 
-/* GO TO TOP BUTTON */
+// GO TO TOP BUTTON
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const maxWidth = 600;
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= heroSectionHeight) {
+  if (window.scrollY >= heroSectionHeight && window.innerWidth > maxWidth) {
     scrollToTopBtn.style.display = 'block';
   } else {
     scrollToTopBtn.style.display = 'none';
@@ -62,3 +63,30 @@ scrollToTopBtn.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+
+
+// CAROUSEL TOUCH SWIPING
+function enableCarouselTouch(carouselId) {
+  const carousel = document.getElementById(carouselId);
+  let touchStartX = null;
+  let touchEndX = null;
+
+  carousel.addEventListener('touchstart', (event) => {
+      touchStartX = event.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchmove', (event) => {
+      touchEndX = event.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchend', () => {
+      const touchDiff = touchStartX - touchEndX;
+      if (touchDiff > 50) {
+          carousel.querySelector('.carousel-control-next').click();
+      } else if (touchDiff < -50) {
+          carousel.querySelector('.carousel-control-prev').click();
+      }
+  });
+}
+
+enableCarouselTouch('carouselIndicators');
