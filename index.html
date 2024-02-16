@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="media/Logo/logo_outlined.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -137,55 +136,64 @@
     <section class="reviews animation-div">
         <div>
             <h2 class="pb-5 mb-5 text-center text-white">What people have to say about our service</h2>
-            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                </ol>
+            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+                </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <div class="row align-items-center review-adjust">
-                            <div class="col h-100 pr-5 text-adjust text-white">
-                                <p>"I'm amazed by the performance boost I have gotten! Went from 50 FPS on low settings to 371 FPS on MAXED settings! I know this also had to do with my GPU being installed wrong, but he has done ALOT of optimizations and everything runs way more smooth! Very happy and satisfied customer here, will definitely come back!"
-                                </p>
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="review-adjust">
+                            <div class="h-100 text-adjust text-white">
+                                <img loading="lazy" src="media/Reviews/fps2.png">
                             </div>
-                            <div class="col h-100 text-adjust text-white">
-                                <img loading="lazy" src="media/Reviews/fps2.png" style="width: 50em;">
+                            <div class="h-100 text-adjust text-white">
+                                <p>"I'm amazed by the performance boost I have gotten! Went from 50 FPS on low settings
+                                    to 371 FPS on MAXED settings! I know this also had to do with my GPU being installed
+                                    wrong, but he has done ALOT of optimizations and everything runs way more smooth!
+                                    Very happy and satisfied customer here, will definitely come back!"
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <div class="row align-items-center review-adjust">
-                            <div class="col h-100 pr-5 text-adjust text-white">
-                                <p>"Went from 210 FPS to 295 FPS in MW3 and also 240 FPS to 500 FPS in Fortnite. This guy is great! Super professional and knows his stuff."
-                                </p>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="review-adjust">
+                            <div class="h-100 text-adjust text-white">
+                                <img loading="lazy" src="media/Reviews/fps3.jpg">
                             </div>
-                            <div class="col h-100 text-adjust text-white">
-                                <img loading="lazy" src="media/Reviews/fps3.jpg" style="width: 50em;">
+                            <div class="h-100 text-adjust text-white">
+                                <p>"Went from 210 FPS to 295 FPS in MW3 and also 240 FPS to 500 FPS in Fortnite. This
+                                    guy is great! Super professional and knows his stuff."
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <div class="row align-items-center review-adjust">
-                            <div class="col h-100 pr-5 text-adjust text-white">
-                                <p>"Definitely recommend his work to anyone, I got a huge FPS boost. He worked fast and was informative on what he was doing. Overclocked pretty much everything you can do to a PC and he did it safely. Very happy with the service!"
-                                </p>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="review-adjust">
+                            <div class="h-100 text-adjust text-white">
+                                <img loading="lazy" src="media/Reviews/fps.png">
                             </div>
-                            <div class="col h-100 text-adjust text-white">
-                                <img loading="lazy" src="media/Reviews/fps.png" style="width: 50em;">
+                            <div class="h-100 text-adjust text-white">
+                                <p>"Definitely recommend his work to anyone, I got a huge FPS boost. He worked fast and
+                                    was informative on what he was doing. Overclocked pretty much everything you can do
+                                    to a PC and he did it safely. Very happy with the service!"
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
@@ -239,10 +247,9 @@
     <script src="scripts/home.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

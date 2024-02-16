@@ -187,11 +187,23 @@ section {
 }
 
 .reviews {
-    padding: 0 25vh;
+    padding: 0 15vw;
 }
 
 .review-adjust {
-    padding: 10vh;
+    padding: 7vw 5vw;
+}
+
+.text-adjust {
+    text-align: center;
+}
+
+.text-adjust img {
+    width: 100%;
+}
+
+.text-adjust p {
+    margin-top: 2em;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -386,23 +398,31 @@ footer a:hover {
         max-width: 950px !important;
     }
 
-    .review-adjust {
-        display: block;
-    }
-
     .conditioner-pic {
         width: 150px !important;
         padding-bottom: 20px;
     }
 
     .text-adjust {
-        font-size: 14px;
-        text-align: justify;
-        padding: 0 25px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel-indicators {
+        display: none;
     }
 
-    .text-adjust h2 {
-        text-align: center;
+    .reviews {
+        padding: 0 2vw;
+    }
+
+    .hero-row h1 {
+        font-size: 9vw;
+    }
+
+    .hero-row h4 {
+        font-size: 4vw;
     }
 }
 
