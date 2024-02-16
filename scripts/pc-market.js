@@ -1,4 +1,4 @@
-/* CATEGORY */
+// CATEGORY
 const categoryContainers = document.querySelectorAll('.category-container');
 let currentCategoryName = "";
 
@@ -20,7 +20,7 @@ categoryContainers.forEach((categoryContainer) => {
   }
 });
 
-/* JSON CARD DATA FETCHING */
+// JSON CARD DATA FETCHING
 function fetchDataCards() {
   fetch('../data/pcs.json')
     .then(response => response.json())
@@ -41,7 +41,7 @@ function updateCard(cardId, data) {
   card.querySelector("#fullName").textContent = data.fullName;
 }
 
-/* JSON MODAL DATA FETCHING */
+// JSON MODAL DATA FETCHING
 function fetchDataModal(productId) {
   fetch('../data/pcs.json')
     .then(response => response.json())
@@ -67,10 +67,10 @@ function updateModal(productData) {
   document.querySelector("#case").textContent = productData.case;
 }
 
-/* POPULATING CARDS */
+// POPULATING CARDS
 fetchDataCards();
 
-/* MODAL LOADING */
+// MODAL LOADING
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const modalOpenButtons = document.querySelectorAll(".open-modal-button");
