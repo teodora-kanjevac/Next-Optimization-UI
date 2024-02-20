@@ -54,21 +54,64 @@ video[poster] {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.animation-active {
+    animation: slideDown 0.3s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 section {
-    margin: 10em 0;
+    margin: 10vw 0;
+}
+
+hr{
+    color: #eeeeee;
+    margin: 0 15vw;
 }
 
 .about {
-    margin: 10em 0 7em;
+    margin: 10em 0 5em;
 }
 
 .about p {
-    line-height: 2.5;
+    line-height: 2;
 }
 
 .about-text {
-    padding-bottom: 5em;
-    border-bottom: 1px solid #363636;
+    padding-bottom: 4em;
+}
+
+.text-adjust {
+    text-align: left;
+}
+
+.text-adjust img {
+    width: 100%;
+}
+
+.text-adjust p {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+}
+
+.text-adjust h3{
+    font-size: 20px;
 }
 
 .animation-div {
@@ -83,28 +126,32 @@ section {
     opacity: 1;
 }
 
-.row1:nth-child(1) {
+.row-animation:nth-child(1) {
     transition-delay: 0.2s;
 }
 
-.row1:nth-child(2) {
+.row-animation:nth-child(2) {
     transition-delay: 0.4s;
 }
 
-.row1:nth-child(3) {
+.row-animation:nth-child(3) {
     transition-delay: 0.6s;
 }
 
-.row2:nth-child(1) {
+.row-animation:nth-child(4) {
     transition-delay: 0.8s;
 }
 
-.row2:nth-child(2) {
+.row-animation:nth-child(5) {
     transition-delay: 1.0s;
 }
 
-.row2:nth-child(3) {
+.row-animation:nth-child(6) {
     transition-delay: 1.2s;
+}
+
+.service-blocks{
+    font-size: 13px;
 }
 
 .service-blocks img {
@@ -113,22 +160,11 @@ section {
 
 .reviews {
     padding: 0 15vw;
+    margin: 7em 0;
 }
 
 .review-adjust {
-    padding: 7vw 5vw;
-}
-
-.text-adjust {
-    text-align: center;
-}
-
-.text-adjust img {
-    width: 100%;
-}
-
-.text-adjust p {
-    margin-top: 2em;
+    padding: 7vw;
 }
 
 .carousel-control-next, .carousel-control-prev {
