@@ -72,20 +72,20 @@ function enableCarouselTouch(carouselId) {
   let touchEndX = null;
 
   carousel.addEventListener('touchstart', (event) => {
-      touchStartX = event.touches[0].clientX;
+    touchStartX = event.touches[0].clientX;
   });
 
   carousel.addEventListener('touchmove', (event) => {
-      touchEndX = event.touches[0].clientX;
+    touchEndX = event.touches[0].clientX;
   });
 
   carousel.addEventListener('touchend', () => {
-      const touchDiff = touchStartX - touchEndX;
-      if (touchDiff > 50) {
-          carousel.querySelector('.carousel-control-next').click();
-      } else if (touchDiff < -50) {
-          carousel.querySelector('.carousel-control-prev').click();
-      }
+    const touchDiff = touchStartX - touchEndX;
+    if (touchDiff > 50) {
+      carousel.querySelector('.carousel-control-next').click();
+    } else if (touchDiff < -50) {
+      carousel.querySelector('.carousel-control-prev').click();
+    }
   });
 }
 
