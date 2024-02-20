@@ -10,7 +10,7 @@ function animateOnScroll() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 50;
 
     if (elementTop < windowHeight - elementVisible && !reveals[i].classList.contains("active")) {
       reveals[i].classList.add("active");
@@ -90,3 +90,20 @@ function enableCarouselTouch(carouselId) {
 }
 
 enableCarouselTouch('carouselIndicators');
+
+//CHANGE THE HERO VIDEO BASED ON SCREEN SIZE
+function updateVideoSource() {
+  var video = document.querySelector(".background-video");
+
+  if (window.innerWidth <= 768) {
+      video.src = "media/Banner/phoneloop.mp4";
+      video.load();
+  } else {
+      video.src = "media/Banner/background-video.mp4";
+      video.load();
+  }
+}
+
+window.addEventListener("resize", updateVideoSource);
+
+updateVideoSource();
