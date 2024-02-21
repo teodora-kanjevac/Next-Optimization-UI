@@ -1,12 +1,12 @@
 section {
-    margin: 4em 0 15em;
+    margin: 4em 0 8em;
 }
 
 .form-box {
     border-radius: 20px;
     background-color: #191920;
     margin: auto;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 2px 2px 15px #000000;
 }
 
@@ -56,8 +56,7 @@ input:focus, textarea:focus {
 }
 
 .available-text {
-    padding: 3rem;
-    padding-left: 5.5rem;
+    padding: 5vw;
 }
 
 .working-hours td {
@@ -77,6 +76,7 @@ input:focus, textarea:focus {
 .mail-link {
     font-size: 1.1em;
     color: #fff;
+    text-decoration: none;
     transition: color 0.15s ease;
 }
 
@@ -113,4 +113,34 @@ input:focus, textarea:focus {
     background-color: #183f21;
     color: #8bca9a;
     border: 2px solid #284b30;
+}
+
+@media (max-width: 990px){
+    .available-text {
+        padding-top: 5em;
+    }
+
+    .space{
+        margin: 0 2.5vw;
+    }
+}
+
+@media (max-width: 540px){
+    .form-box{
+        padding: 2em 1.5em;
+    }
+
+    .form-input{
+        padding: 0.7em;
+        margin-top: 0.7em;
+        font-size: 14px;
+    }
+
+    .available-text{
+        font-size: 14px;
+    }
+
+    .working-hours td {
+        padding-bottom: 1em;
+    }
 }
