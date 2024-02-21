@@ -1,5 +1,5 @@
 .faq {
-    margin: 2em 0 10em;
+    margin: 12em 0 15em;
 }
 
 .question-mark {
@@ -106,4 +106,9 @@
     .title{
         margin-bottom: 4em;
     }
+
+    .faq {
+        margin: 2em 0 10em;
+    }
+    
 }
