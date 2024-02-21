@@ -1,5 +1,5 @@
 .faq {
-    margin: 12em 0 15em;
+    margin: 2em 0 10em;
 }
 
 .question-mark {
@@ -74,4 +74,36 @@
 .contact-link:hover {
     color: #8E6582;
     text-decoration: none;
+}
+
+@media (max-width: 995px){
+    .space{
+        margin: 0 2vw;
+    }
+
+    .space h6{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .custom-accordion-button{
+        font-size: 18px;
+        padding: 0.8em;
+    }
+
+    .accordion-body{
+        font-size: 14px;
+    }
+
+    .show{
+        margin: 0;
+    }
+
+    .faq-title{
+        font-size: 26px;
+    }
+
+    .title{
+        margin-bottom: 4em;
+    }
 }
