@@ -69,7 +69,7 @@ input:focus, textarea:focus {
     font-weight: 600;
 }
 
-.number{
+.number {
     font-size: 1.2em;
 }
 
@@ -85,7 +85,17 @@ input:focus, textarea:focus {
     text-decoration: none;
 }
 
-.promote{
+.discord-link {
+    font-size: 1.1em;
+    color: #fff;
+    transition: color 0.15s ease;
+}
+
+.discord-link:hover {
+    color: #7289DA;
+}
+
+.promote {
     margin-top: 4em;
     padding: 20px;
     background-color: #523549;
@@ -115,28 +125,28 @@ input:focus, textarea:focus {
     border: 2px solid #284b30;
 }
 
-@media (max-width: 990px){
+@media (max-width: 990px) {
     .available-text {
         padding-top: 5em;
     }
 
-    .space{
+    .space {
         margin: 0 2.5vw;
     }
 }
 
-@media (max-width: 540px){
-    .form-box{
+@media (max-width: 540px) {
+    .form-box {
         padding: 2em 1.5em;
     }
 
-    .form-input{
+    .form-input {
         padding: 0.7em;
         margin-top: 0.7em;
         font-size: 14px;
     }
 
-    .available-text{
+    .available-text {
         font-size: 14px;
     }
 

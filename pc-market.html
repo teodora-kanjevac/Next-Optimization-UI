@@ -46,23 +46,27 @@
         </div>
     </nav>
 
+    <div class="text-center promotional-banner">
+        <span class="pb-3 text-white">Limited PCs currently available, more coming soon!</span>
+    </div>
+
     <!-- Modal -->
     <div id="modal" class="modal">
         <div class="modal-details">
             <span class="modal-close">&times;</span>
             <div class="picture-button">
                 <div class="pc-picture">
-                    <img src="https://picsum.photos/300/400" alt="">
+                    <img id="photo" loading="lazy" src="" alt="">
                 </div>
                 <div class="buy-section">
                     <h3 id="fullName" class="text-white pb-4"></h3>
                     <h1 id="price" class="pb-4 price"></h1>
-                    <a class="buy-button" href="">Buy Now</a>
-                    <img class="payment" src="media/Icons/payment.png" alt="">
+                    <a class="buy-button" href="contact.html">Contact us</a>
+                    <img class="payment" loading="lazy" src="media/Icons/payment.png" alt="">
                 </div>
             </div>
-            <div class="spec-table">
-                <table>
+            <div class="row justify-content-center spec-table">
+                <table class="col-lg-8">
                     <tr>
                         <td class="component">CPU</td>
                         <td id="cpu" class="spec"></td>
@@ -102,7 +106,7 @@
 
     <!-- PC List -->
     <section>
-        <div class="container pt-5 pb-5">
+        <div class="container pt-3 pb-5">
             <h2 class="pb-3 text-center text-white">Which PC is right for you?</h2>
         </div>
         <div class="card-wrapper">
@@ -112,10 +116,10 @@
                 </div>
                 <div class="card-category">
                     <div class="card-item">
-                        <div class="card open-modal-button">
+                        <div id="BEAST1" class="card open-modal-button">
                             <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-                                    alt="" class="pc">
+                                <img src="media/PCs/card.png"
+                                    loading="lazy" alt="" class="pc">
                             </div>
                             <div class="contentBox">
                                 <h3 id="fullName"></h3>
@@ -124,10 +128,18 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="category-container">
+                <div class="category-title">
+                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">ELITE</span></h3>
+                </div>
+                <div class="card-category">
                     <div class="card-item">
-                        <div class="card open-modal-button">
+                        <div id="ELITE1" class="card open-modal-button">
                             <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
+                                <img src="media/PCs/card.png"
                                     alt="" class="pc">
                             </div>
                             <div class="contentBox">
@@ -142,26 +154,13 @@
 
             <div class="category-container">
                 <div class="category-title">
-                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">PRO</span></h3>
+                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">FORCE</span></h3>
                 </div>
                 <div class="card-category">
                     <div class="card-item">
-                        <div id="PRO1" class="card open-modal-button">
+                        <div id="FORCE1" class="card open-modal-button">
                             <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-                                    alt="" class="pc">
-                            </div>
-                            <div class="contentBox">
-                                <h3 id="fullName"></h3>
-                                <h2 id="price" class="price"></h2>
-                                <button class="see open-modal-button">See More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <div id="PRO2" class="card open-modal-button">
-                            <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
+                                <img src="media/PCs/card.png"
                                     alt="" class="pc">
                             </div>
                             <div class="contentBox">
@@ -176,81 +175,13 @@
 
             <div class="category-container">
                 <div class="category-title">
-                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">PROLITE</span></h3>
+                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">CUSTOM</span></h3>
                 </div>
                 <div class="card-category">
                     <div class="card-item">
-                        <div id="PROLITE1" class="card open-modal-button">
+                        <div id="CUSTOM" class="card open-modal-button">
                             <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-                                    alt="" class="pc">
-                            </div>
-                            <div class="contentBox">
-                                <h3 id="fullName"></h3>
-                                <h2 id="price" class="price"></h2>
-                                <button class="see open-modal-button">See More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <div id="PROLITE2" class="card open-modal-button">
-                            <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-                                    alt="" class="pc">
-                            </div>
-                            <div class="contentBox">
-                                <h3 id="fullName"></h3>
-                                <h2 id="price" class="price"></h2>
-                                <button class="see open-modal-button">See More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category-container">
-                <div class="category-title">
-                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">SIMPRO</span></h3>
-                </div>
-                <div class="card-category">
-                    <div class="card-item">
-                        <div id="SIMPRO1" class="card open-modal-button">
-                            <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-                                    alt="" class="pc">
-                            </div>
-                            <div class="contentBox">
-                                <h3 id="fullName"></h3>
-                                <h2 id="price" class="price"></h2>
-                                <button class="see open-modal-button">See More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <div id="SIMPRO2" class="card open-modal-button">
-                            <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-                                    alt="" class="pc">
-                            </div>
-                            <div class="contentBox">
-                                <h3 id="fullName"></h3>
-                                <h2 id="price" class="price"></h2>
-                                <button class="see open-modal-button">See More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="category-container">
-                <div class="category-title">
-                    <h3 class="pb-4 text-white">CATEGORY: <span class="category-name">ENTRY</span></h3>
-                </div>
-                <div class="card-category">
-                    <div class="card-item">
-                        <div id="ENTRY1" class="card open-modal-button">
-                            <div class="imgBox">
-                                <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
+                                <img src="media/PCs/card.png"
                                     alt="" class="pc">
                             </div>
                             <div class="contentBox">
