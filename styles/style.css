@@ -126,6 +126,10 @@ hr{
     opacity: 1;
 }
 
+.icons{
+    width: 150px !important;
+}
+
 .row-animation:nth-child(1) {
     transition-delay: 0.2s;
 }
