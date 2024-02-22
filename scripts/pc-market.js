@@ -65,6 +65,7 @@ function updateModal(productData) {
   document.querySelector("#cooler").textContent = productData.cooler;
   document.querySelector("#powerSupply").textContent = productData.powerSupply;
   document.querySelector("#case").textContent = productData.case;
+  document.querySelector("#photo").src = productData.photo;
 }
 
 // POPULATING CARDS

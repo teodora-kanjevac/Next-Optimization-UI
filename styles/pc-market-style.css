@@ -1,5 +1,17 @@
+.promotional-banner {
+    background-color: #705066;
+    color: #fff;
+    padding: 0.6em;
+    width: 100%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.promotional-banner span {
+    font-size: 16px;
+}
+
 section {
-    margin: 4em 0 15em;
+    margin: 2em 0 15em;
 }
 
 .card-wrapper {
@@ -8,7 +20,7 @@ section {
 }
 
 .category-title {
-    padding-left: 3em;
+    padding-left: 3vw;
 }
 
 .category-name {
@@ -74,8 +86,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 1em 0 0.3em;
     z-index: 1;
+}
+
+#photo{
+    max-width: 400px;
+    border-radius: 5%;
 }
 
 .card .contentBox {
@@ -179,8 +196,8 @@ section {
 
 .modal-close {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 0px;
+    right: 20px;
     font-size: 3em;
     cursor: pointer;
     color: #eee;
@@ -194,7 +211,7 @@ section {
 
 .spec-table table {
     margin: 1em auto;
-    width: 60%;
+    width: 70%;
     border-collapse: collapse;
     background-color: #242424;
     color: #fff;
@@ -216,22 +233,26 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin: 2em auto;
-    gap: 5em;
+    margin: 2em 5vw;
+    gap: 3em;
 }
 
 .price {
-    color: rgb(255, 187, 0);
+    color: rgb(255, 213, 98);
     font-size: 2.6em;
 }
 
+.buy-section h3{
+    font-size: 1.4em;
+}
+
 .buy-button {
-    display: inline-block;
+    display: block;
     background: #8E6582;
     color: #fff;
+    width: 100%;
     margin-top: auto;
-    padding: 1em 7em;
+    padding: 0.8em 0;
     text-decoration: none;
     border-radius: 1.87em;
     text-align: center;
@@ -246,6 +267,7 @@ section {
 
 .payment {
     padding-top: 1.5em;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -253,14 +275,20 @@ section {
         margin: 3.5em 1em;
     }
 
-    .picture-button {
-        flex-direction: column;
-        text-align: center;
-        width: 80%;
-    }
-
     .buy-button {
         margin-top: 10px;
+    }
+
+    .modal-details{
+        width: 95%;
+    }
+
+    .spec-table table{
+        width: 85%;
+    }
+
+    .picture-button{
+        text-align: left;
     }
 }
 
@@ -275,5 +303,40 @@ section {
 
     .card-category {
         justify-content: center;
+    }
+
+    #photo{
+        width: 80%;
+    }
+}
+
+@media (max-width: 980px) {
+    .picture-button {
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        margin-left: 8vw;
+    }
+
+    #photo{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 540px){
+    .promotional-banner span{
+        font-size: 12px;
+    }
+
+    .price{
+        font-size: 28px;
+    }
+
+    .spec-table table{
+        font-size: 14px;
+    }
+
+    .buy-section h3{
+        font-size: 20px;
     }
 }
