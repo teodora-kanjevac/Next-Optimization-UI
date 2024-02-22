@@ -55,7 +55,7 @@ window.addEventListener("scroll", function () {
   } else {
     scrollToTopBtn.style.display = 'none';
   }
-});
+}, {passive: true});
 
 scrollToTopBtn.addEventListener("click", function () {
   window.scrollTo({
@@ -73,11 +73,11 @@ function enableCarouselTouch(carouselId) {
 
   carousel.addEventListener('touchstart', (event) => {
     touchStartX = event.touches[0].clientX;
-  });
+  }, {passive: true});
 
   carousel.addEventListener('touchmove', (event) => {
     touchEndX = event.touches[0].clientX;
-  });
+  }, {passive: true});
 
   carousel.addEventListener('touchend', () => {
     const touchDiff = touchStartX - touchEndX;
@@ -90,20 +90,3 @@ function enableCarouselTouch(carouselId) {
 }
 
 enableCarouselTouch('carouselIndicators');
-
-//CHANGE THE HERO VIDEO BASED ON SCREEN SIZE
-function updateVideoSource() {
-  var video = document.querySelector(".background-video");
-
-  if (window.innerWidth <= 768) {
-      video.src = "media/Banner/phoneloop.mp4";
-      video.load();
-  } else {
-      video.src = "media/Banner/background-video.mp4";
-      video.load();
-  }
-}
-
-window.addEventListener("resize", updateVideoSource);
-
-updateVideoSource();

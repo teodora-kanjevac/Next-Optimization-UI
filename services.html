@@ -48,19 +48,23 @@
     </nav>
 
     <!-- Optimization -->
-    <section>
+    <section itemscope itemtype="https://schema.org/Service">
         <div class="container pt-5 pb-3">
             <h2 class="pb-3 text-center text-white">Schedule an Optimization</h2>
         </div>
         <div class="pricing-table-wrapper">
             <ul class="pricing-table">
-                <li class="pricing-table-item">
-                    <img src="media/Icons/overclock2.png" alt="" class="pricing-table-img" />
+                <li class="pricing-table-item" itemprop="hasOfferCatalog" itemscope
+                    itemtype="https://schema.org/OfferCatalog">
+                    <meta itemprop="name" content="Overclocking Services">
+                    <meta itemprop="price" content="49.99">
+                    <meta itemprop="priceCurrency" content="USD">
+                    <img src="media/Icons/overclock2.png" alt="overclock" class="pricing-table-img" />
                     <h3 class="pricing-table-title">OVERCLOCKING</h3>
                     <p class="pricing-table-description">
                         <span class="pricing-table-price">$49.99</span>
                         <span class="pricing-table-label">$69.99 is the full price</span>
-                        <span class="pricing-table-save">You save 28%</span>
+                        <span class="pricing-table-save">Save 28%</span>
                     </p>
                     <ul class="pricing-table-products">
                         <li class="pricing-table-product">CPU Overclocking</li>
@@ -71,13 +75,17 @@
                     <a href="" class="pricing-table-button"
                         onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nextpcoptimization/overclocking'});return false;">Continue</a>
                 </li>
-                <li class="pricing-table-item pricing-table-item-popular" data-popular="Popular">
-                    <img src="media/Icons/troubleshooting.png" alt="" class="pricing-table-img" />
+                <li class="pricing-table-item pricing-table-item-popular" data-popular="Popular"
+                    itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+                    <meta itemprop="name" content="Optimization Services">
+                    <meta itemprop="price" content="99.99">
+                    <meta itemprop="priceCurrency" content="USD">
+                    <img src="media/Icons/troubleshooting.png" alt="troubleshoot" class="pricing-table-img" />
                     <h3 class="pricing-table-title">OPTIMIZATION</h3>
                     <p class="pricing-table-description">
                         <span class="pricing-table-price">$99.99</span>
                         <span class="pricing-table-label">$149.99 is the full price</span>
-                        <span class="pricing-table-save">You save 33%</span>
+                        <span class="pricing-table-save">Save 33%</span>
                     </p>
                     <ul class="pricing-table-products">
                         <li class="pricing-table-product">Windows Optimization</li>
@@ -88,13 +96,17 @@
                     <a href="" class="pricing-table-button"
                         onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nextpcoptimization/optimization'});return false;">Continue</a>
                 </li>
-                <li class="pricing-table-item">
-                    <img src="media/Icons/assemble.png" alt="" class="pricing-table-img" />
+                <li class="pricing-table-item" itemprop="hasOfferCatalog" itemscope
+                    itemtype="https://schema.org/OfferCatalog">
+                    <meta itemprop="name" content="Full PC Tuning Services">
+                    <meta itemprop="price" content="124.99">
+                    <meta itemprop="priceCurrency" content="USD">
+                    <img src="media/Icons/assemble.png" alt="assemble" class="pricing-table-img" />
                     <h3 class="pricing-table-title-both">FULL PC TUNING</h3>
                     <p class="pricing-table-description">
                         <span class="pricing-table-price">$124.99</span>
                         <span class="pricing-table-label">$199.99 is the full price</span>
-                        <span class="pricing-table-save">You save 37%</span>
+                        <span class="pricing-table-save">Save 37%</span>
                     </p>
                     <ul class="pricing-table-products">
                         <li class="pricing-table-product">Full Windows Optimization</li>
@@ -114,7 +126,8 @@
         <div class="row py-5 my-2 custom-row links-block">
 
             <div class="col logo">
-                <h2 class="pt-3"><img loading="lazy" class="footer-logo" src="media/Logo/logo.png">
+                <h2 class="pt-3"><img loading="lazy" class="footer-logo" src="media/Logo/logo.png"
+                        alt="nextpcoptimization">
                 </h2>
             </div>
 
@@ -123,7 +136,7 @@
                     <h5>Quick Links</h5>
                     <ul class="nav flex-column">
                         <li class="mb-2"><a href="index.html">Home</a></li>
-                        <li class="mb-2"><a href="#" style="scroll-behavior: smooth;">Services</a></li>
+                        <li class="mb-2 scroll"><a href="#">Services</a></li>
                         <li class="mb-2"><a href="pc-market.html">Buy a PC</a></li>
                         <li class="mb-2"><a href="contact.html">Contact</a></li>
                         <li class="mb-2"><a href="faq.html">FAQ</a></li>
