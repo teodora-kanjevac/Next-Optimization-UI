@@ -28,6 +28,20 @@
       "photo":"media/PCs/modal.jpg"
    },
    {
+      "id":"ELITE2",
+      "fullName":"Ryzen 7 7800X3D/RX 7900XTX/32GB",
+      "cpu":"AMD Ryzen 7 7800X3D",
+      "gpu":"AMD Radeon RX 7900XTX",
+      "motherboard":"B650 (Asus / MSI / Gigabyte)",
+      "ram":"32GB 6000mHz CL30 GSkill Trident Z Neo",
+      "ssd":"Samsung 980 PRO 1TB (2TB or more options available)",
+      "cooler":"Noctua NH-U12S Chromax",
+      "powerSupply":"Corsair RM850X",
+      "case":"Corsair 4000D Airflow",
+      "price":"$2,599.99",
+      "photo":"media/PCs/modal.jpg"
+   },
+   {
       "id":"FORCE1",
       "fullName":"I5 14600KF/4070 SUPER/32GB",
       "cpu":"Intel Core i5 14600KF",
@@ -39,6 +53,34 @@
       "powerSupply":"Corsair RM750e",
       "case":"Corsair 4000D Airflow",
       "price":"$1,999.99",
+      "photo":"media/PCs/modal.jpg"
+   },
+   {
+      "id":"FORCE2",
+      "fullName":"Ryzen 7 7800x3D/RX 7900XT/32GB",
+      "cpu":"AMD Ryzen 7 7800x3D",
+      "gpu":"AMD Radeon RX 7900XT",
+      "motherboard":"GIGABYTE B650 Gaming X AX",
+      "ram":"32GB 6000mHz CL30 TEAMGROUP",
+      "ssd":"Crucial P3 Plus 1TB",
+      "cooler":"Thermalright Assassin",
+      "powerSupply":"Corsair RM850e",
+      "case":"Corsair 4000D Airflow",
+      "price":"$1,999.99",
+      "photo":"media/PCs/modal.jpg"
+   },
+   {
+      "id":"ENTRY1",
+      "fullName":"Ryzen 7 5700X3D/RX 7800 XT/32GB",
+      "cpu":"AMD Ryzen 7 5700X3D",
+      "gpu":"AMD RX 7800 XT",
+      "motherboard":"B550M (Asus / MSI / Gigabyte)",
+      "ram":"32GB 3600mHz CL16 (GSKILL / TEAMGROUP)",
+      "ssd":"Crucial P3 1TB",
+      "cooler":"Thermalright Assassin",
+      "powerSupply":"Thermaltake Gold 750w",
+      "case":"Montech X3 Mesh",
+      "price":"$1,499.99",
       "photo":"media/PCs/modal.jpg"
    },
    {
