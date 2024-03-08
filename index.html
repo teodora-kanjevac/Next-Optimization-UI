@@ -149,21 +149,28 @@
     </section>
 
     <!-- Reviews Carousel -->
-    <section class="reviews animation-div" itemscope itemtype="https://schema.org/Review">
+    <section class="reviews animation-div">
         <div>
             <h2 class="pb-5 px-2 text-center text-white">What people have to say about our service</h2>
             <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true"></button>
-                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"></button>
+                        aria-current="true" aria-label="Next"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Back"></button>
+                    <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"aria-label="Next"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="carousel-item active" data-bs-interval="4000" itemscope itemtype="https://schema.org/Review">
                         <div class="review-adjust" itemprop="reviewBody">
                             <div class="h-100 text-adjust text-white">
                                 <img loading="lazy" src="media/Reviews/fps2.jpg" alt="fps">
+                                <span itemprop="author" class="review-style" itemscope itemtype="https://schema.org/Person">
+                                    <span itemprop="name">jurresmurf</span>
+                                  </span>
+                                <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/ProfessionalService">
+                                      <span itemprop="name" class="review-style">Full PC Tuning</span>
+                                      <span itemprop="ratingValue" class="review-style">- 5 ⭐</span>
+                                </div>
                             </div>
                             <div class="h-100 text-adjust text-white">
                                 <p>"I'm amazed by the performance boost I have gotten! Went from 50 FPS on low settings
@@ -174,10 +181,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
+                    <div class="carousel-item" data-bs-interval="4000" itemscope itemtype="https://schema.org/Review">
                         <div class="review-adjust" itemprop="reviewBody">
                             <div class="h-100 text-adjust text-white">
                                 <img loading="lazy" src="media/Reviews/fps3.jpg" alt="fps">
+                                <span itemprop="author" class="review-style" itemscope itemtype="https://schema.org/Person">
+                                    <span itemprop="name">cam69420</span>
+                                  </span>
+                                <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/ProfessionalService">
+                                      <span itemprop="name" class="review-style">Full PC Tuning</span>
+                                      <span itemprop="ratingValue" class="review-style">- 5 ⭐</span>
+                                </div>
                             </div>
                             <div class="h-100 text-adjust text-white">
                                 <p>"Went from 210 FPS to 295 FPS in MW3 and also 240 FPS to 500 FPS in Fortnite. This
@@ -186,10 +200,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
+                    <div class="carousel-item" data-bs-interval="4000" itemscope itemtype="https://schema.org/Review">
                         <div class="review-adjust" itemprop="reviewBody">
                             <div class="h-100 text-adjust text-white">
-                                <img loading="lazy" src="media/Reviews/fps.jpg" alt="fps">
+                                <img loading="lazy" src="media/Reviews/fps.jpg" alt="fps" itemprop="itemReviewed" itemscope itemtype="https://schema.org/ProfessionalService">
+                                <span itemprop="author" class="review-style" itemscope itemtype="https://schema.org/Person">
+                                    <span itemprop="name">muentesg</span>
+                                  </span>
+                                <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/ProfessionalService">
+                                      <span itemprop="name" class="review-style">Full PC Tuning</span>
+                                      <span itemprop="ratingValue" class="review-style">- 5 ⭐</span>
+                                </div>
                             </div>
                             <div class="h-100 text-adjust text-white">
                                 <p>"Definitely recommend his work to anyone, I got a huge FPS boost. He worked fast and
@@ -239,19 +260,19 @@
             <div class="col text-start follow">
                 <h5>Follow us</h5>
                 <ul class="flex-column social-media">
-                    <li class="discord"><a href="https://www.discord.com/invite/nVp3Fq85SX" target="_blank"><i
+                    <li class="discord"><a href="https://www.discord.com/invite/nVp3Fq85SX" aria-label="Discord" target="_blank"><i
                                 class="bi bi-discord"></i></a>
                     </li>
-                    <li class="tiktok"><a href="https://www.tiktok.com/@nextpcoptimization" target="_blank"><i
+                    <li class="tiktok"><a href="https://www.tiktok.com/@nextpcoptimization" aria-label="TikTok" target="_blank"><i
                                 class="bi bi-tiktok"></i></a>
                     </li>
-                    <li class="instagram"><a href="https://www.instagram.com/nextpcoptimization" target="_blank"><i
+                    <li class="instagram"><a href="https://www.instagram.com/nextpcoptimization" aria-label="Instagram" target="_blank"><i
                                 class="bi bi-instagram"></i></a>
                     </li>
-                    <li class="twitter"><a href="https://twitter.com/nextpcgaming" target="_blank"><i
+                    <li class="twitter"><a href="https://twitter.com/nextpcgaming" aria-label="Twitter" target="_blank"><i
                                 class="bi bi-twitter-x"></i></a>
                     </li>
-                    <li class="youtube"><a href="https://www.youtube.com/@nextpcoptimization" target="_blank"><i
+                    <li class="youtube"><a href="https://www.youtube.com/@nextpcoptimization" aria-label="Youtube" target="_blank"><i
                                 class="bi bi-youtube"></i></a>
                     </li>
                 </ul>
