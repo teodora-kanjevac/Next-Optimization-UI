@@ -80,7 +80,7 @@ section {
     margin: 10vw 0;
 }
 
-hr{
+hr {
     color: #eeeeee;
     margin: 0 15vw;
 }
@@ -103,14 +103,15 @@ hr{
 
 .text-adjust img {
     width: 100%;
+    padding-bottom: 1.5em;
 }
 
 .text-adjust p {
-    margin-top: 1.5em;
+    margin-top: 1em;
     font-size: 1.2em;
 }
 
-.text-adjust h3{
+.text-adjust h3 {
     font-size: 20px;
 }
 
@@ -126,7 +127,7 @@ hr{
     opacity: 1;
 }
 
-.icons{
+.icons {
     width: 150px !important;
 }
 
@@ -154,7 +155,7 @@ hr{
     transition-delay: 0.95s;
 }
 
-.service-blocks{
+.service-blocks {
     font-size: 13px;
 }
 
@@ -171,7 +172,14 @@ hr{
     padding: 7vw;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.review-style {
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 2%;
 }
 
